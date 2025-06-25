@@ -16,8 +16,6 @@ function App() {
     const itemsPerPage = 50;
 
 
-    // useEffect(() => handleNewData(), [globalData])
-    // useEffect(() => changeCurrentPage(), [currentPage])
 
     function changeCurrentPage(currentPage){
         let start = (currentPage - 1) * itemsPerPage;  // bug

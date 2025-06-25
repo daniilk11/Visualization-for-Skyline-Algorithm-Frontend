@@ -38,18 +38,6 @@ function HotelTable({data,skylineData, itemsPerPage,page, onPageChange, requestD
         if( lastPageInPaginator > maxPage){ // dont set active state
             return
         }
-        // setButtonStates((prevButtonStates) => {
-        //     // Copy previous button states array
-        //     const newButtonStates = [...prevButtonStates];
-        //
-        //     // Set all buttons to not active
-        //     newButtonStates.fill(false);
-        //
-        //     // Set the clicked button to active
-        //     newButtonStates[number] = true;
-        //
-        //     return newButtonStates; // Return updated button states array
-        // });
 
         if( number === lastPageInPaginator-1){
             number = lastPageInPaginator-1
