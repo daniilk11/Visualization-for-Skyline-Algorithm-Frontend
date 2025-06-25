@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*margin: 2rem auto;*/
+    height: 240px;
+    background: whitesmoke;
+    padding: 2rem;
+    font-size: 18px;
+    /*line-height: 30px;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.containerWithChart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    /*padding: 1rem;*/
+    height: 660px;
+    background: whitesmoke;
+    transition: opacity 1s ease-in-out, transform 2s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.selectors {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.labelSelector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*text-align: left;*/
+
+
+
+    width: 200px;
+}
+
+
+form select {
+    margin: 3rem 0.8rem 3rem 0.3rem;
+    height: 38px;
+    font-size: 17px;
+    cursor: pointer; /* Add cursor on hover */
+    border-radius: 6px;
+}
+
+form input[type="checkbox"] {
+    cursor: pointer;
+    margin-right: 0.3rem;
+}
+
+
+
+Button {
+    justify-content: center;
+    align-content: normal;
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: white;
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    /*padding: 0 0 1rem 1rem;*/
+    margin:  2rem 0  2rem 0;
+    cursor: pointer; /* Add cursor on hover */
+    border-radius: 6px; /* Add some border radius */
+}
+
+.HotelChartContainer{
+    width: 950px;
+    height: 800px;
+}
+
+.HotelChart {
+    transform: translateY(9px); /* Set initial transform to translateY(20px) */
+    transition: opacity 2s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.HotelChartShow {
+    opacity: 1; /* When the show class is applied, transition to an opacity of 1 */
+    transform: translateY(0); /* When the show class is applied, transition to translateY(0) */
+}
